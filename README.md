@@ -13,7 +13,7 @@ cd your_work_dir
 git clone https://github.com/KKKTT-cyk/chuwa1208.git
 ```
 
-### Student TODO: send your github email address to me by slack. I will add you to this repo
+### Student TODO: fork this repo to contribute code or short questions.
 
 ### Create your feature branch to implement the assignment.
 
