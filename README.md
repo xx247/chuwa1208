@@ -1,46 +1,53 @@
 
 # Chuwa Training
 
+## How to submit your assignments using this repo
 
+### Step 1: Fork this repo
+Students **must fork** this repository to their own GitHub account first.
 
-## How to record your assignments by using this repo:
+Click **Fork** on the top-right corner of this repo.
 
-### Clone this repo:
-open your teminal, run below command.
+---
+
+### Step 2: Clone *your forked repo*
+Open your terminal and run:
 
 ```bash
 cd your_work_dir
-git clone https://github.com/KKKTT-cyk/chuwa1208.git
+git clone https://github.com/<your_github_username>/chuwa1208.git
+cd chuwa1208
 ```
 
-### Student TODO: fork this repo to contribute code or short questions.
-
-### Create your feature branch to implement the assignment.
-
+(Optional but recommended) Add the original repo as upstream:
 ```bash
-git branch firstName_lastName/master
+git remote add upstream https://github.com/KKKTT-cyk/chuwa1208.git
+```
+
+## Step 3: Create your own master branch
+
+Create a personal master branch in your fork:
+```bash
+git checkout -b firstName_lastName/master
+git push origin firstName_lastName/master
+```
+
+## Step 4: Create a homework feature branch
+
+For each homework, create a new branch from your own master branch:
+```bash
 git checkout firstName_lastName/master
-
-example: 
-HW1:
 git checkout -b firstName_lastName/hw1
+```
+Work on your assignment, then commit and push:
 git add .
-git commit -m "commit_message"
+git commit -m "Finish HW1"
 git push origin firstName_lastName/hw1
-```
-write your assignment under this feature branch.
 
-**short questions assignments -> shortQuestions directory**
 
-**coding assignments -> coding directory**
+## Step 5: Raise a Pull Request (PR)
 
-### How to Raise a PR
-working on your homework branch, ie. **firstName_lastName/hw1**
-```bash
-git push origin firstName_lastName/hw1
-```
-then open your github, **Compare and Pull** or **New pull request**
-```text
-to **firstName_lastName/master** from **firstName_lastName/hw1**
-```
-You should always raise your PRs to your own firstName_lastName/master branch, **Please don't raise your PR to main branch**
+Go to your fork on GitHub.
+
+Create a Pull Request:
+
