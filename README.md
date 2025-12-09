@@ -40,10 +40,11 @@ git checkout firstName_lastName/master
 git checkout -b firstName_lastName/hw1
 ```
 Work on your assignment, then commit and push:
+```bash
 git add .
 git commit -m "Finish HW1"
 git push origin firstName_lastName/hw1
-
+```
 
 ## Step 5: Raise a Pull Request (PR)
 
