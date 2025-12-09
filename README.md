@@ -10,7 +10,7 @@ open your teminal, run below command.
 
 ```bash
 cd your_work_dir
-git clone 
+git clone https://github.com/KKKTT-cyk/chuwa1208.git
 ```
 
 ### Student TODO: send your github email address to me by slack. I will add you to this repo
