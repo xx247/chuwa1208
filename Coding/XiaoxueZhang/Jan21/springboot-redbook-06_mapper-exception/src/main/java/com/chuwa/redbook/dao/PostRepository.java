@@ -10,5 +10,7 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface PostRepository extends JpaRepository<Post, Long> {
-    // No need to write code
+    // Returns true if a Post with the given title exists
+    boolean existsByTitle(String title);
+
 }
