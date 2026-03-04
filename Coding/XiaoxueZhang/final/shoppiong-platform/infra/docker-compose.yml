@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: shopping-postgres
+    environment:
+      POSTGRES_DB: accountdb
+      POSTGRES_USER: account
+      POSTGRES_PASSWORD: accountpwd
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
