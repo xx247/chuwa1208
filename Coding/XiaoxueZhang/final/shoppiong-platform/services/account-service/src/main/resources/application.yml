@@ -1,6 +1,11 @@
 server:
   port: 8081
 
+app:
+  jwt:
+    secret: "CHANGE_ME_TO_A_LONG_RANDOM_SECRET_please_32+_chars_1234567890"
+    issuer: "account-service"
+    expire-minutes: 60
 
 spring:
   application:

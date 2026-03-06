@@ -33,6 +33,7 @@ public class UserAccount {
     private Instant updatedAt;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
     private List<Address> addresses = new ArrayList<>();
 
     public Optional<Address> getShippingAddress() {
